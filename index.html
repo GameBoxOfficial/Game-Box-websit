@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Game Box | گیم باکس</title>
+<meta name="description" content="Game Box — ۹ بازی آنلاین در یک اپ: شطرنج، تخت‌نرد، اونو، مونوپولی ایران، راش، سینما و بیشتر. دانلود برای ویندوز و اندروید.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230b1026'/%3E%3Cpath d='M50 17L58.2 42.2L84.7 42.2L63.3 57.8L71.5 83L50 67.4L28.5 83L36.7 57.8L15.3 42.2L41.8 42.2Z' fill='%23e9c46a' stroke='%23e9c46a' stroke-width='3' stroke-linejoin='round'/%3E%3C/svg%3E">
+<style>
+:root{color-scheme:dark;--bg:#0b1026;--card:#141a38;--line:#262e5c;--ink:#eceefb;--mute:#9aa3d1;--gold:#e9c46a}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.8 Vazirmatn,"Segoe UI",Tahoma,system-ui,sans-serif}
+.w{max-width:1040px;margin:0 auto;padding:0 20px}
+header{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:19px}.brand svg{width:34px;height:34px}
+button,.btn{font:inherit;cursor:pointer}
+#lg{background:none;border:1px solid var(--line);color:var(--ink);border-radius:8px;padding:6px 14px}
+.hero{text-align:center;padding:56px 0 40px}
+.hero svg{width:116px;height:116px;filter:drop-shadow(0 10px 30px rgba(233,196,106,.35))}
+h1{font-size:clamp(34px,7vw,56px);line-height:1.2;margin:16px 0 8px;color:var(--gold)}
+.hero p{max-width:560px;margin:0 auto;color:var(--mute);font-size:19px}
+.dl{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin:30px 0 10px}
+.btn{display:inline-flex;flex-direction:column;align-items:center;min-width:210px;padding:12px 26px;border-radius:12px;text-decoration:none;font-weight:700;background:var(--gold);color:#241a00;border:2px solid var(--gold)}
+.btn small{font-weight:400;opacity:.8;font-size:13px}.btn.alt{background:none;color:var(--ink);border-color:var(--line)}
+.btn:hover{filter:brightness(1.08)}a:focus-visible,button:focus-visible{outline:3px solid #fff;outline-offset:3px}
+.note{color:var(--mute);font-size:14px}
+#rel{margin:22px auto 0;max-width:560px;font-size:15px;color:var(--mute)}#rel b{color:var(--ink)}
+section{padding:42px 0;border-top:1px solid var(--line)}
+h2{font-size:26px;margin:0 0 14px}
+.lead{max-width:760px;color:var(--mute)}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));margin-top:22px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.card .top{height:8px}.card .in{padding:16px 18px 18px}
+.card h3{margin:0;font-size:20px}.card .ic{font-size:30px;line-height:1.2}
+.card p{margin:6px 0 10px;color:var(--mute);font-size:15px;line-height:1.7}
+.tags{display:flex;gap:6px;flex-wrap:wrap}.tags span{font-size:13px;padding:1px 10px;border:1px solid;border-radius:99px}
+.feat .card .in{padding:16px 18px}.feat h3{font-size:18px;color:var(--gold)}
+ol{margin:8px 0 0;padding-inline-start:22px;color:var(--mute)}li{margin-bottom:6px}
+.two{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));margin-top:20px}
+details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 18px;margin-bottom:10px}
+summary{cursor:pointer;font-weight:700}details p{margin:8px 0 0;color:var(--mute);font-size:15px}
+.btn.dc{background:#5865F2;border-color:#5865F2;color:#fff;margin-top:14px}.btn.dc small{opacity:.9}
+footer{border-top:1px solid var(--line);padding:26px 0 40px;color:var(--mute);font-size:14px;text-align:center}footer a{color:var(--gold)}
+</style></head><body>
+<div class="w">
+<header><div class="brand"><svg viewBox="0 0 100 100" aria-hidden="true"><rect width="100" height="100" rx="22" fill="#0b1026" stroke="#262e5c" stroke-width="2"/><path d="M50 17L58.2 42.2L84.7 42.2L63.3 57.8L71.5 83L50 67.4L28.5 83L36.7 57.8L15.3 42.2L41.8 42.2Z" fill="#e9c46a" stroke="#e9c46a" stroke-width="3" stroke-linejoin="round"/></svg>Game Box</div><button id="lg"></button></header>
+
+<div class="hero">
+<svg viewBox="0 0 100 100" aria-hidden="true"><rect width="100" height="100" rx="22" fill="#0b1026" stroke="#262e5c" stroke-width="1.5"/><path d="M50 17L58.2 42.2L84.7 42.2L63.3 57.8L71.5 83L50 67.4L28.5 83L36.7 57.8L15.3 42.2L41.8 42.2Z" fill="#e9c46a" stroke="#e9c46a" stroke-width="3" stroke-linejoin="round"/></svg>
+<h1>Game Box</h1><p data-i="tag"></p>
+<div class="dl"><a id="bw" class="btn" href="#"><span data-i="dlw"></span><small>Windows</small></a><a id="ba" class="btn" href="#"><span data-i="dla"></span><small>Android (APK)</small></a></div>
+<div class="note" data-i="note"></div>
+</div>
+
+<section id="discord"><h2 data-i="dcT"></h2><p class="lead" data-i="dcP"></p><a class="btn dc" href="https://discord.gg/2aGSPJznC6" target="_blank" rel="noopener"><span data-i="dcB"></span><small>discord.gg/2aGSPJznC6</small></a></section>
+<section id="about"><h2 data-i="aboutT"></h2><p class="lead" data-i="aboutP"></p><div class="grid feat" id="feat"></div></section>
+<section id="games"><h2 data-i="gamesT"></h2><p class="lead" data-i="gamesP"></p><div class="grid" id="gl"></div></section>
+<section id="install"><h2 data-i="instT"></h2><div class="two">
+<div class="card"><div class="in"><h3 data-i="wT"></h3><ol id="ws"></ol></div></div>
+<div class="card"><div class="in"><h3 data-i="aT"></h3><ol id="as"></ol></div></div></div></section>
+<section id="faq"><h2 data-i="faqT"></h2><div id="fq"></div></section>
+<footer><span data-i="foot"></span> · <a id="rl" href="#" data-i="allrel"></a></footer>
+</div>
+<script>
+const REPO='kiarashdevil/Game-Box';
+const DL='https://github.com/'+REPO+'/releases/download/v1.1/';
+const $=s=>document.querySelector(s);
+const G=[
+{i:'♟️',c:'#cfd3dc',b:'linear-gradient(90deg,#2b2f3a,#cfd3dc)',n:['شطرنج','Chess'],d:['با کامپیوتر در سه درجه سختی، دو نفره روی یک دستگاه، یا آنلاین با دوستت.','Play the computer at three difficulty levels, two players on one device, or online with a friend.'],t:[['با کامپیوتر','دو نفره','آنلاین'],['Vs computer','2 players','Online']]},
+{i:'🎲',c:'#d7a94b',b:'linear-gradient(90deg,#6a3b18,#d7a94b)',n:['تخت نرد','Backgammon'],d:['بازی کلاسیک ایرانی با کامپیوتر، دو نفره یا آنلاین. تاس بنداز و مهره‌هات رو به خونه برسون.','The classic Persian board game: play the computer, two players, or online. Roll and bring your checkers home.'],t:[['با کامپیوتر','دو نفره','آنلاین'],['Vs computer','2 players','Online']]},
+{i:'🃏',c:'#ff5a4d',b:'linear-gradient(90deg,#d62f2f,#f0b429,#2e9b5a,#2b6fd6)',n:['اونو','Uno'],d:['دو حالت: کلاسیک و هری پاتر با کارت‌های جادویی (ولدمورت، کلاه گروه‌بندی، زوزه‌کش، نامرئی، مودی، سنگ رستاخیز). با ربات‌ها یا آنلاین.','Two modes: Classic, and Harry Potter with magic cards (Voldemort, Sorting Hat, Howler, Invisibility, Moody, Resurrection Stone). Vs bots or online.'],t:[['۲ حالت','هری پاتر','آنلاین'],['2 modes','Harry Potter','Online']]},
+{i:'🏙️',c:'#e9c46a',b:'linear-gradient(90deg,#0f6f73,#e9c46a)',n:['مونوپولی ایران','Monopoly Iran'],d:['ملک‌های شهرهای ایران رو بخر، اجاره بگیر و حریف‌ها رو ورشکسته کن. با ربات یا آنلاین تا ۴ نفر.','Buy Iranian cities, collect rent and bankrupt your rivals. Play bots or online with up to 4 players.'],t:[['با ربات','آنلاین تا ۴ نفر','چت'],['Vs bots','Online up to 4','Chat']]},
+{i:'🏎️',c:'#ffb020',b:'linear-gradient(90deg,#5b2bb8,#ff6a3c)',n:['راش 2D','Rush 2D'],d:['مسابقه‌ی ماشین با آیتم‌های خفن، مپ‌های مختلف و سه درجه سختی. با کیبورد یا لمسی، تنها یا آنلاین.','Kart-style racing with items, many tracks and three difficulty levels. Keyboard or touch, solo or online.'],t:[['مسابقه','آیتم','آنلاین'],['Racing','Items','Online']]},
+{i:'🏁',c:'#27d6ff',b:'linear-gradient(90deg,#0f2a6b,#27d6ff)',n:['راش 3D','Rush 3D'],d:['همون راش، ولی با گرافیک سه‌بعدی واقعی (WebGL): نورپردازی، سایه، انعکاس ری‌ترسینگ، دوربین سه‌بعدی و دو مپ بیشتر (اصفهان و استانبول).','The same Rush, but with a real-time 3D WebGL renderer: lighting, shadows, ray-traced reflections, a 3D camera and two extra tracks (Isfahan and Istanbul).'],t:[['سه‌بعدی','ری‌ترسینگ','۱۷ مپ'],['3D graphics','Ray tracing','17 tracks']]},
+{i:'❌⭕',c:'#a78bfa',b:'linear-gradient(90deg,#ff3d7f,#5b3cc4,#27d6ff)',n:['دوز','Tic-Tac-Toe'],d:['بازی کلاسیک دوز با کامپیوتر در سه درجه سختی، دو نفره روی یک دستگاه، یا آنلاین با دوستت.','The classic game: play the computer at three difficulty levels, two players on one device, or online with a friend.'],t:[['با کامپیوتر','دو نفره','آنلاین'],['Vs computer','2 players','Online']]},
+{i:'🎬',c:'#ffb020',b:'linear-gradient(90deg,#1b1f4b,#7a1f3d,#e08a1e)',n:['سینما','Cinema'],d:['با دوستات فیلم ببین، بازی استریم کن یا صفحه‌ی گوشی و کامپیوترت رو شیر کن. ورود فقط با تأیید میزبان.','Watch movies, stream games or share your screen with friends. Joining needs the host to approve you.'],t:[['شیر اسکرین','پخش فایل','تأیید ورود'],['Screen share','Play a file','Host approval']]},
+{i:'🎨',c:'#ffc93c',b:'linear-gradient(90deg,#34175a,#ff6b57,#ffc93c)',n:['خط‌خطی','Doodle Squad'],d:['با دوستات آنلاین نقاشی بکش و حدس بزن. دو حالت: نقاشی و حدس، و نقاش قلابی! بساز اتاق و کدش رو بده به بقیه.','Draw and guess together online. Two modes: Draw & Guess, and Fake Artist. Create a room and share the code with friends.'],t:[['چندنفره','نقاشی و حدس','آنلاین'],['Multiplayer','Draw & Guess','Online']]}];
+const T={fa:{lg:'English',tag:'همه‌ی بازی‌های دورهمی، توی یک اپ',dlw:'دانلود برای ویندوز',dla:'دانلود برای اندروید',note:'نسخه‌ی ۱.۱ · فعلاً بروزرسانی از داخل سایت انجام می‌شه؛ بزودی از داخل خود اپ بروزرسانی مستقیم دریافت می‌کنید',
+aboutT:'Game Box چیه؟',aboutP:'Game Box یه مجموعه‌ی بازیه که ۹ بازی محبوب رو توی یک اپ کنار هم گذاشته؛ از شطرنج و تخت‌نرد و اونو تا مونوپولی ایران، مسابقه‌ی ماشین و سینمای مشترک. اپ رو نصب کن، یه بازی انتخاب کن و با کامپیوتر، دو نفره روی یک دستگاه یا آنلاین با دوستات بازی کن.',
+feat:[['۹ بازی، یک اپ','شطرنج، تخت‌نرد، اونو، مونوپولی ایران، راش ۲ و ۳ بعدی، دوز، سینما و خط‌خطی؛ همه کنار هم.'],['آنلاین با دوستات','همه‌ی بازی‌ها آنلاین هم بازی می‌شن؛ بعضی‌ها با کامپیوتر یا دو نفره روی یک دستگاه هم.'],['شیر اسکرین در ویندوز','توی سینما فیلم ببین یا صفحه‌ی کامپیوترت رو (با صدا) برای دوستات پخش کن.'],['فارسی و انگلیسی','با یک دکمه زبان رو عوض کن.'],['بروزرسانی','فعلاً بروزرسانی از داخل سایت انجام می‌شه؛ بزودی از داخل خود اپ بروزرسانی مستقیم دریافت می‌کنید.']],
+gamesT:'بازی‌ها',gamesP:'۹ بازی که الان توی Game Box هست:',instT:'نصب',wT:'ویندوز',aT:'اندروید',
+win:['فایل GameBox-Setup.exe رو دانلود کن.','اجراش کن. اگه ویندوز پنجره‌ی آبی هشدار (SmartScreen) داد، روی «More info» و بعد «Run anyway» بزن.','نصب رو تموم کن و Game Box رو از منوی Start یا دسکتاپ باز کن.'],
+and:['فایل Game-Box.apk رو دانلود کن.','اگه گوشی اجازه‌ی «نصب از منابع ناشناس» خواست، برای مرورگر یا فایل‌منیجرت روشنش کن.','فایل رو باز کن و «نصب» رو بزن. اگه Play Protect هشدار داد، «Install anyway» رو انتخاب کن.'],
+faqT:'سوالات متداول',faq:[['چرا ویندوز یا گوشی موقع نصب هشدار می‌ده؟','چون اپ هنوز امضای دیجیتال رسمی نداره و از استورها نصب نمی‌شه. این هشدار برای اپ‌هایی که مستقیم دانلود می‌شن عادیه.'],['شیر اسکرین روی گوشی هم کار می‌کنه؟','نه، اشتراک صفحه فقط توی نسخه‌ی ویندوز هست. توی گوشی فقط می‌تونی تماشا کنی.'],['بروزرسانی چطوریه؟','فعلاً بروزرسانی از داخل سایت انجام می‌شه؛ نسخه‌ی جدید رو از همین صفحه دانلود و نصب کن. بزودی از داخل خود اپ بروزرسانی مستقیم دریافت می‌کنید.']],
+dcT:'سرور دیسکورد',dcP:'به جمع بازیکن‌ها بپیوند؛ سوال بپرس، نظر بده و دوست پیدا کن.',dcB:'ورود به دیسکورد',foot:'Game Box · made by kiarash TB',allrel:'همه‌ی نسخه‌ها',ver0:'',latest:'آخرین نسخه',},
+en:{lg:'فارسی',tag:'All your party games in one app',dlw:'Download for Windows',dla:'Download for Android',note:'Version 1.1 · for now updates are done from this website; soon you will get updates directly inside the app',
+aboutT:'What is Game Box?',aboutP:'Game Box is a game collection that puts 9 popular games in one app, from chess, backgammon and Uno to Monopoly Iran, kart racing and a shared cinema. Install it, pick a game and play the computer, two players on one device, or online with your friends.',
+feat:[['9 games, one app','Chess, Backgammon, Uno, Monopoly Iran, Rush 2D and 3D, Tic-Tac-Toe, Cinema and Doodle Squad, all together.'],['Online with friends','Every game can be played online; some also work against the computer or two players on one device.'],['Screen share on Windows','Watch movies in Cinema or share your PC screen (with sound) with your friends.'],['Persian and English','Switch the language with one button.'],['Updates','For now updates are done from this website; soon you will get updates directly inside the app.']],
+gamesT:'Games',gamesP:'The 9 games in Game Box right now:',instT:'Install',wT:'Windows',aT:'Android',
+win:['Download GameBox-Setup.exe.','Run it. If Windows shows a blue SmartScreen warning, click “More info”, then “Run anyway”.','Finish the setup and open Game Box from the Start menu or desktop.'],
+and:['Download Game-Box.apk.','If your phone asks for “install unknown apps” permission, allow it for your browser or file manager.','Open the file and tap Install. If Play Protect warns you, choose “Install anyway”.'],
+faqT:'FAQ',faq:[['Why does Windows or my phone show a warning?','The app has no official digital signature yet and is not installed from a store. This warning is normal for apps downloaded directly.'],['Does screen share work on phones?','No, screen sharing is only in the Windows version. On a phone you can only watch.'],['How do updates work?','For now updates are done from this website: download and install the new version from this page. Soon you will get updates directly inside the app.']],
+dcT:'Discord Server',dcP:'Join the community: ask questions, share feedback and find friends to play with.',dcB:'Join our Discord',foot:'Game Box · made by kiarash TB',allrel:'All releases',latest:'Latest version'}};
+let L='fa',REL=null;try{L=localStorage.getItem('gbl')||'fa'}catch(e){}
+const ua=navigator.userAgent,OS=/Android/i.test(ua)?'a':/Windows/i.test(ua)?'w':'';
+$('#bw').href=DL+'GameBox-Setup.exe';$('#ba').href='https://github.com/'+REPO+'/releases/download/android-v1.1/Game-Box.apk';$('#rl').href='https://github.com/'+REPO+'/releases';
+$('#bw').className='btn'+(OS=='a'?' alt':'');$('#ba').className='btn'+(OS=='w'?' alt':'');
+const el=(t,c,x)=>{const e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e};
+function render(){
+ const t=T[L],i=L=='fa'?0:1;
+ document.documentElement.lang=L;document.documentElement.dir=L=='fa'?'rtl':'ltr';
+ document.title=L=='fa'?'Game Box | گیم باکس':'Game Box | Download';
+ document.querySelectorAll('[data-i]').forEach(e=>e.textContent=t[e.dataset.i]);$('#lg').textContent=t.lg;
+ const f=$('#feat');f.textContent='';t.feat.forEach(x=>{const c=el('div','card'),n=el('div','in');n.append(el('h3','',x[0]),el('p','',x[1]));c.append(n);f.append(c)});
+ const g=$('#gl');g.textContent='';G.forEach(x=>{const c=el('div','card'),n=el('div','in'),tg=el('div','tags');
+  c.append(Object.assign(el('div','top'),{style:'background:'+x.b}));n.append(el('div','ic',x.i),el('h3','',x.n[i]),el('p','',x.d[i]));
+  x.t[i].forEach(s=>{const e=el('span','',s);e.style.color=x.c;e.style.borderColor=x.c+'88';tg.append(e)});n.append(tg);c.append(n);g.append(c)});
+ [['#ws',t.win],['#as',t.and]].forEach(([s,a])=>{const o=$(s);o.textContent='';a.forEach(x=>o.append(el('li','',x)))});
+ const q=$('#fq');q.textContent='';t.faq.forEach(x=>{const d=el('details'),s=el('summary','',x[0]);d.append(s,el('p','',x[1]));q.append(d)});
+}
+$('#lg').onclick=()=>{L=L=='fa'?'en':'fa';try{localStorage.setItem('gbl',L)}catch(e){}render()};
+render();
+</script></body></html>
