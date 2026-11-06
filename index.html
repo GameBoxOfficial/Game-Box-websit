@@ -43,6 +43,7 @@ footer{border-top:1px solid var(--line);padding:26px 0 40px;color:var(--mute);fo
 <div class="w">
 <header><div class="brand"><svg viewBox="0 0 100 100" aria-hidden="true"><rect width="100" height="100" rx="22" fill="#0b1026" stroke="#262e5c" stroke-width="2"/><path d="M50 17L58.2 42.2L84.7 42.2L63.3 57.8L71.5 83L50 67.4L28.5 83L36.7 57.8L15.3 42.2L41.8 42.2Z" fill="#e9c46a" stroke="#e9c46a" stroke-width="3" stroke-linejoin="round"/></svg>Game Box</div><button id="lg"></button></header>
 
+
 <div class="hero">
 <svg viewBox="0 0 100 100" aria-hidden="true"><rect width="100" height="100" rx="22" fill="#0b1026" stroke="#262e5c" stroke-width="1.5"/><path d="M50 17L58.2 42.2L84.7 42.2L63.3 57.8L71.5 83L50 67.4L28.5 83L36.7 57.8L15.3 42.2L41.8 42.2Z" fill="#e9c46a" stroke="#e9c46a" stroke-width="3" stroke-linejoin="round"/></svg>
 <h1>Game Box</h1><p data-i="tag"></p>
@@ -50,7 +51,8 @@ footer{border-top:1px solid var(--line);padding:26px 0 40px;color:var(--mute);fo
 <div class="note" data-i="note"></div>
 </div>
 
-<section id="discord"><h2 data-i="dcT"></h2><p class="lead" data-i="dcP"></p><a class="btn dc" href="https://discord.gg/2aGSPJznC6" target="_blank" rel="noopener"><span data-i="dcB"></span><small>discord.gg/2aGSPJznC6</small></a></section>
+
+<section id="discord"><h2 data-i="dcT"></h2><p class="lead" data-i="dcP"></p><a class="btn dc" href="https://discord.gg/2aGSPJznC6" target="_blank" rel="noopener"><span data-i="dcB"></span></a></section>
 <section id="about"><h2 data-i="aboutT"></h2><p class="lead" data-i="aboutP"></p><div class="grid feat" id="feat"></div></section>
 <section id="games"><h2 data-i="gamesT"></h2><p class="lead" data-i="gamesP"></p><div class="grid" id="gl"></div></section>
 <section id="install"><h2 data-i="instT"></h2><div class="two">
@@ -60,8 +62,8 @@ footer{border-top:1px solid var(--line);padding:26px 0 40px;color:var(--mute);fo
 <footer><span data-i="foot"></span> · <a id="rl" href="#" data-i="allrel"></a></footer>
 </div>
 <script>
-const REPO='kiarashdevil/Game-Box';
-const DL='https://github.com/'+REPO+'/releases/download/v1.1/';
+const REPO='GameBoxOfficial/Game-Box';
+const DL='https://github.com/GameBoxOfficial/Game-Box/releases/download/windows-v1.2/';
 const $=s=>document.querySelector(s);
 const G=[
 {i:'♟️',c:'#cfd3dc',b:'linear-gradient(90deg,#2b2f3a,#cfd3dc)',n:['شطرنج','Chess'],d:['با کامپیوتر در سه درجه سختی، دو نفره روی یک دستگاه، یا آنلاین با دوستت.','Play the computer at three difficulty levels, two players on one device, or online with a friend.'],t:[['با کامپیوتر','دو نفره','آنلاین'],['Vs computer','2 players','Online']]},
@@ -73,7 +75,7 @@ const G=[
 {i:'❌⭕',c:'#a78bfa',b:'linear-gradient(90deg,#ff3d7f,#5b3cc4,#27d6ff)',n:['دوز','Tic-Tac-Toe'],d:['بازی کلاسیک دوز با کامپیوتر در سه درجه سختی، دو نفره روی یک دستگاه، یا آنلاین با دوستت.','The classic game: play the computer at three difficulty levels, two players on one device, or online with a friend.'],t:[['با کامپیوتر','دو نفره','آنلاین'],['Vs computer','2 players','Online']]},
 {i:'🎬',c:'#ffb020',b:'linear-gradient(90deg,#1b1f4b,#7a1f3d,#e08a1e)',n:['سینما','Cinema'],d:['با دوستات فیلم ببین، بازی استریم کن یا صفحه‌ی گوشی و کامپیوترت رو شیر کن. ورود فقط با تأیید میزبان.','Watch movies, stream games or share your screen with friends. Joining needs the host to approve you.'],t:[['شیر اسکرین','پخش فایل','تأیید ورود'],['Screen share','Play a file','Host approval']]},
 {i:'🎨',c:'#ffc93c',b:'linear-gradient(90deg,#34175a,#ff6b57,#ffc93c)',n:['خط‌خطی','Doodle Squad'],d:['با دوستات آنلاین نقاشی بکش و حدس بزن. دو حالت: نقاشی و حدس، و نقاش قلابی! بساز اتاق و کدش رو بده به بقیه.','Draw and guess together online. Two modes: Draw & Guess, and Fake Artist. Create a room and share the code with friends.'],t:[['چندنفره','نقاشی و حدس','آنلاین'],['Multiplayer','Draw & Guess','Online']]}];
-const T={fa:{lg:'English',tag:'همه‌ی بازی‌های دورهمی، توی یک اپ',dlw:'دانلود برای ویندوز',dla:'دانلود برای اندروید',note:'نسخه‌ی ۱.۱ · فعلاً بروزرسانی از داخل سایت انجام می‌شه؛ بزودی از داخل خود اپ بروزرسانی مستقیم دریافت می‌کنید',
+const T={fa:{lg:'English',tag:'همه‌ی بازی‌های دورهمی، توی یک اپ',dlw:'دانلود برای ویندوز',dla:'دانلود برای اندروید',note:'نسخه‌ی ۱.۲ · فعلاً بروزرسانی از داخل سایت انجام می‌شه؛ بزودی از داخل خود اپ بروزرسانی مستقیم دریافت می‌کنید',
 aboutT:'Game Box چیه؟',aboutP:'Game Box یه مجموعه‌ی بازیه که ۹ بازی محبوب رو توی یک اپ کنار هم گذاشته؛ از شطرنج و تخت‌نرد و اونو تا مونوپولی ایران، مسابقه‌ی ماشین و سینمای مشترک. اپ رو نصب کن، یه بازی انتخاب کن و با کامپیوتر، دو نفره روی یک دستگاه یا آنلاین با دوستات بازی کن.',
 feat:[['۹ بازی، یک اپ','شطرنج، تخت‌نرد، اونو، مونوپولی ایران، راش ۲ و ۳ بعدی، دوز، سینما و خط‌خطی؛ همه کنار هم.'],['آنلاین با دوستات','همه‌ی بازی‌ها آنلاین هم بازی می‌شن؛ بعضی‌ها با کامپیوتر یا دو نفره روی یک دستگاه هم.'],['شیر اسکرین در ویندوز','توی سینما فیلم ببین یا صفحه‌ی کامپیوترت رو (با صدا) برای دوستات پخش کن.'],['فارسی و انگلیسی','با یک دکمه زبان رو عوض کن.'],['بروزرسانی','فعلاً بروزرسانی از داخل سایت انجام می‌شه؛ بزودی از داخل خود اپ بروزرسانی مستقیم دریافت می‌کنید.']],
 gamesT:'بازی‌ها',gamesP:'۹ بازی که الان توی Game Box هست:',instT:'نصب',wT:'ویندوز',aT:'اندروید',
@@ -81,7 +83,7 @@ win:['فایل GameBox-Setup.exe رو دانلود کن.','اجراش کن. اگ
 and:['فایل Game-Box.apk رو دانلود کن.','اگه گوشی اجازه‌ی «نصب از منابع ناشناس» خواست، برای مرورگر یا فایل‌منیجرت روشنش کن.','فایل رو باز کن و «نصب» رو بزن. اگه Play Protect هشدار داد، «Install anyway» رو انتخاب کن.'],
 faqT:'سوالات متداول',faq:[['چرا ویندوز یا گوشی موقع نصب هشدار می‌ده؟','چون اپ هنوز امضای دیجیتال رسمی نداره و از استورها نصب نمی‌شه. این هشدار برای اپ‌هایی که مستقیم دانلود می‌شن عادیه.'],['شیر اسکرین روی گوشی هم کار می‌کنه؟','نه، اشتراک صفحه فقط توی نسخه‌ی ویندوز هست. توی گوشی فقط می‌تونی تماشا کنی.'],['بروزرسانی چطوریه؟','فعلاً بروزرسانی از داخل سایت انجام می‌شه؛ نسخه‌ی جدید رو از همین صفحه دانلود و نصب کن. بزودی از داخل خود اپ بروزرسانی مستقیم دریافت می‌کنید.']],
 dcT:'سرور دیسکورد',dcP:'به جمع بازیکن‌ها بپیوند؛ سوال بپرس، نظر بده و دوست پیدا کن.',dcB:'ورود به دیسکورد',foot:'Game Box · made by kiarash TB',allrel:'همه‌ی نسخه‌ها',ver0:'',latest:'آخرین نسخه',},
-en:{lg:'فارسی',tag:'All your party games in one app',dlw:'Download for Windows',dla:'Download for Android',note:'Version 1.1 · for now updates are done from this website; soon you will get updates directly inside the app',
+en:{lg:'فارسی',tag:'All your party games in one app',dlw:'Download for Windows',dla:'Download for Android',note:'Version 1.2 · for now updates are done from this website; soon you will get updates directly inside the app',
 aboutT:'What is Game Box?',aboutP:'Game Box is a game collection that puts 9 popular games in one app, from chess, backgammon and Uno to Monopoly Iran, kart racing and a shared cinema. Install it, pick a game and play the computer, two players on one device, or online with your friends.',
 feat:[['9 games, one app','Chess, Backgammon, Uno, Monopoly Iran, Rush 2D and 3D, Tic-Tac-Toe, Cinema and Doodle Squad, all together.'],['Online with friends','Every game can be played online; some also work against the computer or two players on one device.'],['Screen share on Windows','Watch movies in Cinema or share your PC screen (with sound) with your friends.'],['Persian and English','Switch the language with one button.'],['Updates','For now updates are done from this website; soon you will get updates directly inside the app.']],
 gamesT:'Games',gamesP:'The 9 games in Game Box right now:',instT:'Install',wT:'Windows',aT:'Android',
@@ -91,7 +93,7 @@ faqT:'FAQ',faq:[['Why does Windows or my phone show a warning?','The app has no 
 dcT:'Discord Server',dcP:'Join the community: ask questions, share feedback and find friends to play with.',dcB:'Join our Discord',foot:'Game Box · made by kiarash TB',allrel:'All releases',latest:'Latest version'}};
 let L='fa',REL=null;try{L=localStorage.getItem('gbl')||'fa'}catch(e){}
 const ua=navigator.userAgent,OS=/Android/i.test(ua)?'a':/Windows/i.test(ua)?'w':'';
-$('#bw').href=DL+'GameBox-Setup.exe';$('#ba').href='https://github.com/'+REPO+'/releases/download/android-v1.1/Game-Box.apk';$('#rl').href='https://github.com/'+REPO+'/releases';
+$('#bw').href=DL+'GameBox-Setup.exe';$('#ba').href='https://github.com/GameBoxOfficial/Game-Box/releases/download/android-v1.2/Gmae-Box.apk';$('#rl').href='https://github.com/'+REPO+'/releases';
 $('#bw').className='btn'+(OS=='a'?' alt':'');$('#ba').className='btn'+(OS=='w'?' alt':'');
 const el=(t,c,x)=>{const e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e};
 function render(){
